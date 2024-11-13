@@ -1,0 +1,22 @@
+research_task:
+  description: >
+    Realize uma pesquisa abrangente sobre {topic}, explorando as descobertas e informações mais interessantes e relevantes até o ano atual, 2024.
+  expected_output: >
+    Uma lista com os 10 pontos principais de informações mais relevantes sobre {topic}, destacando aspectos inovadores, tendências e resultados de destaque.
+  agent: pesquisador_senior
+
+reporting_task:
+  description: >
+    Revise o contexto recebido e expanda cada tópico em uma seção completa para um relatório. Assegure-se de que o relatório seja detalhado, contendo exclusivamente o conteúdo analisado, sem qualquer menção à confiabilidade ou verificação das informações.
+  expected_output: >
+    Um relatório completo em português (PT-BR) com seções bem organizadas para cada tema, formatado em HTML como texto embutido. Cada seção deve incluir informações aprofundadas que facilitem o entendimento e a aplicação dos dados, mantendo o foco unicamente no conteúdo analisado.
+  agent: analista_de_relatorios
+
+fact_checking_task:
+  description: >
+    Conduza uma verificação detalhada das informações coletadas sobre {topic}, garantindo a precisão, atualidade e confiabilidade de todas as fontes. Avalie se as afirmações estão devidamente embasadas e se os dados apresentados são consistentes com as evidências mais recentes.
+  expected_output: >
+    Um relatório com observações sobre a confiabilidade e precisão de cada um dos 10 pontos destacados. O relatório deve indicar qualquer inconsistência ou necessidade de atualização, detalhando as fontes verificadas e justificando a avaliação de cada informação. Formato em português (PT-BR).
+  agent: checador_de_fatos
+
+
